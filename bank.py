@@ -18,7 +18,7 @@ class Bank:
     def balanceequiry(self):
         temp = db_query(
             f"SELECT balance FROM customers WHERE username = '{self.__username}';")
-        print(f"{self.__username} Your Balance is {temp[0][0]}\u20B9")
+        print(f"{self.__username} Your Balance is {temp[0][0]}\u20B9`")
 
     def deposit(self, amount):
         temp = db_query(
